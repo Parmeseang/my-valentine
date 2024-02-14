@@ -2,13 +2,16 @@
 num = 1
 let Num
 let a = document.getElementById("no");
-let b = document.getElementsByClassName("yes");
+let b = document.getElementById("yes");
 console.log(a)
 let h1 = document.querySelector("h1")
-let p = document.querySelector("p")
+let p = document.getElementById("p1")
+let p2 = document.getElementById("p2")
+
+let pointb = 1
 function nany() {
     let Num =num++
-    console.log(Num)
+    console.log("ปุ่มno"+Num)
 
     if (g1 =(Num==1)){
         // คำสั่งทำให้ปุ่มใหญ่ขึ้นละเปลี่ยนคำ ส่วนของเปลี่ยนคำน่าจะเปลี่ยนคลาสเอาเพราะรู้แค่นี้
@@ -38,8 +41,9 @@ function nany() {
     }
     if (g1 =(Num==7)){
         // คำสั่งทำให้ปุ่มใหญ่ขึ้นละเปลี่ยนคำ ส่วนของเปลี่ยนคำน่าจะเปลี่ยนคลาสเอาเพราะรู้แค่นี้
-        a.classList.remove("no");
-        a.classList.add("yes");
+        // a.classList.remove("no");
+        a.classList.add("non");
+        b.classList.add("center")
         a.innerText="Yes";
         p.innerText="อย่ามึนไอ่สัสกูไม่ให้กดละ";
     }
@@ -51,9 +55,20 @@ function nany() {
 }
 
 function nanyes() {
-    h1.innerText="ยินดีด้วยครับคุณได้หัวใจผมไปครอบครอง";
-    p.innerText="น่ารักมากคั้บbaby ใจๆๆ";
+    h1.innerText="สุดท้ายกูก็ต้องยอมมึงไอ่สัสส";
+    p.innerText="";
+    a.classList.add("non");
+    b.classList.add("non");
+    p2.innerText=`โทษนะวันนี้กูดาวจัดอะเศร้าชิบหาย เพราะมึงอะไอ่สัสสส ให้กูสวมเขาเองคงไม่เจ็บเท่านี้ไอ่เหี้ยยย
+                   คือว่า กูไม่อยากจะจบหรอกนะ อันนี้กูขอตรงๆเลยมึงอยากจะไปกับกูต่อไหม ไม่อยากคิดมากละ 
+                   ความรู้สึกดีๆอะมีเหมือนกูรึปล่าว กูกินหญ้ามาทั้งวันละอยากกินอะไรหวานๆ 
+                   ไม่ต้องสวมเขาให้กูกูสวมเองได้ และที่สำคัญกูอยากจะเชื่อนะว่าที่ผ่านมามันเป็นมึงไม่ได้โกหกกู 
+                   อ่านถึงตรงนี้คงจะฉุนขึ้นมาละขอให้ยกหมัดขึ้นมาละโทรหาเค้านะbaby
+                   อย่าถามนะไอ่สัสกูดาวเรื่องอะไร แค่นี้กูก็ยอมมึงสุดๆละ `;
+                   
 }
+
+
 
 
 
